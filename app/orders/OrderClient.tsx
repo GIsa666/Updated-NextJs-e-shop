@@ -14,15 +14,13 @@ import {
 import ActionBtn from "@/app/components/products/ActionBtn";
 import { useRouter } from "next/navigation";
 import moment from "moment";
-import { CartProductType } from "../product/[productId]/ProductDetails";
-import Link from "next/link";
 
 interface OrdersClientProps {
   orders: ExtendedOrders[]; 
-  item: CartProductType;
+
 }
 type ExtendedOrders = Order & { user: User };
-const OrdersClient: React.FC<OrdersClientProps> = ({ orders,item }) => {
+const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
   
   
   let rows: any = [];
