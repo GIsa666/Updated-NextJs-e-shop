@@ -74,14 +74,7 @@ axios.post("/api/register", data).then(() => {
   return (
     <>
       <Heading title="Sign up for E-shop" />
-      <Button
-        outline
-        label="Continue with Google"
-        icon={AiOutlineGoogle}
-        onClick={() => {
-          signIn("google");
-        }}
-      />
+
       <hr className="bg-slate-300 w-full h-px" />
       <Input
         id="name"
